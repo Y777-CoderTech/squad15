@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Squad 15 | Contatos</title>
+      <link rel="stylesheet" href="/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <nav>
+         <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+         </div>
+         <div class="logo">
+            PowerTranças
+         </div>
+         <div class="nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sn.index.html">Sobre Nós</a></li>
+            <li><a href="hs.html">Histórias de Sucesso</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            
+            <li><a href="contatos.html">Contatos</a></li>
+         </div>
+         <div class="search-icon">
+            <span class="fas fa-search"></span>
+         </div>
+         <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+         </div>
+         <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+      </nav>
+      <div class="box" style="border: #073837;">
+
+         <img src="./photo/undraw_contact_us_re_4qqt.svg" width="70%" height="70%">
+         <h1 style="color:rgb(37, 90, 65);">Fale Conosco: Sua Jornada é Importante</h1>
+         <p style="color: black;">"Estamos aqui para ouvir você. Compartilha suas perguntas,histórias ou ideias.Juntos podemos criar um ambiente de apoio onde suas aspirações podem florescer."</p>
+         <br>
+         <style>
+            .box{
+              justify-content: center;
+              top: 70%;
+              left: 70%;
+              right: 20%;
+              padding: 30px;
+              border-radius: 30px;
+              width: 90%;
+              color: white;
+
+            }
+            
+            fieldset{
+               border: 4px solid ;
+            }
+            legend{
+               border: 2px  solid;
+               border-color:dodgerblue;
+               padding: 10px;
+               text-align: center;
+               background-color: dodgerblue;
+               border-radius: 8px;
+               
+            }
+            .inputbox{
+               position: relative;
+            }
+
+            .inputuser{
+               background: none;
+               border: none;
+               border-bottom: 1px solid white;
+               outline:none;
+               font-size: 15px;
+               width: 100%;
+               letter-spacing: 2px;
+            }
+            .labelimput{
+               position: absolute;
+               top: 0px;
+               left: 0px;
+               pointer-events: none;
+               transition: .5s;
+            }
+            .inputuser:focus ~ .labelimput,
+            .inputuser:valid ~ .labelimput{
+               top: -20px;
+               font-size: 12px;
+               color: dodgerblue;
+            }
+            #data_nascimento{
+               border: none;
+               padding: 8px;
+               border-radius: 10px;
+               outline: none;
+               font-size: 15px;
+            }
+            #submit{
+               background: rgb(15, 58, 100);
+               width: 100%;
+               border: none;
+               padding: 15px;
+               color: white;
+               font-size: 15px;
+               cursor: pointer;
+               border-radius: 30px;
+            }
+            #submit:hover{
+               background-color: rgb(59, 19, 80);
+            }
+
+         </style>
+         
+         <form action="">
+            <fieldset style="background-color: #0c7c7a; border-color:dodgerblue;">
+               <legend ><b>Junta-se à Comunidade</b></legend>
+               <br>
+               <div class="inputbox">
+                  <input type="text" name="nome" id="nome" class="inputuser" required>
+                  <label for="nome" class="labelinput">Nome Completo</label>
+               </div>
+               <br>
+               <div class="inputbox">
+                  <input type="text" name="email" id="email" class="inputuser" required>
+                  <label for="email"class="labelinput">Email</label>
+               </div>
+               <br>
+               <div class="inputbox">
+                  <input type="men" name="men" id="men" class="inputuser" required>
+                  <label for="mensagem"class="labelinput">Mensagem</label>
+                  
+               </div>
+               <br>
+               <p>Sexo:</p>
+               <br>
+               <input type="radio" id="feminino" name="genero" value="feminino" required>
+               <label for="feminino">Feminino</label>
+               <br>
+               <input type="radio" id="masculino" name="genero" value="masculino" required>
+               <label for="masculino">Masculino</label>
+               <br>
+               <input type="radio" id="outro" name="genero" value="outro" required>
+               <label for="outro">Outro</label>
+               <br><br>
+               
+                  <label for="data_nascimento"><b>Data de Nascimento</b></label>
+                  <input type="date" name="data_nascimento" id="data_nascimento" required>
+               
+               <br><br><br>
+               <div class="inputbox">
+                  
+                  <input type="text" name="cidade" id="cidade" class="inputuser" class="labelinput"required>
+                  <label for="cidade">Cidade</label>
+                  
+               </div>
+               <br>
+               <div class="inputbox">
+                  <input type="text" name="estado" id="estado" class="inputuser" class="labelinput"required>
+                  <label for="estado">Estado</label>
+                  
+               </div>
+               <br>
+               <div class="inputbox">
+                  <input type="end" name="end" id="end" class="inputuser" class="labelinput"required>
+                  <label for="end">Endereço</label>
+                  
+               </div>
+               <br>
+               <input type="submit" name="submit"id="submit">
+            </fieldset>
+         </form>
+         <table>
+            <img src="./photo/undraw_sign_up_n6im.svg" width="100%" />
+         </table>
+      </div>
+      <script>
+         const menuBtn = document.querySelector(" .menu-icon span");
+         const searchBtn = document.querySelector(".search-icon");
+         const cancelBtn = document.querySelector(".cancel-icon");
+         const items = document.querySelector(".nav-items");
+         const form = document.querySelector("form");
+         menuBtn.onclick = () => {
+            items.classList.add("active");
+            menuBtn.classList.add("hide");
+            searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+         }
+         cancelBtn.onclick = () => {
+            items.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            searchBtn.classList.remove("hide");
+            cancelBtn.classList.remove("show");
+            form.classList.remove("active");
+            cancelBtn.style.color = "#ff3d00";
+         }
+         searchBtn.onclick = () => {
+            form.classList.add("active");
+            searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+         }
+      </script>
+      
+   
+      <footer id="footer" class="footer">
+        <div class="footer-content">
+          <div class="main-txt text-center">
+            
+           </div>
+          <div class="social-links text-center">
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+                  <div class="contact-info text-center">
+                  <div class="contact-item">
+                     <p><i class="fas fa-phone"></i>+55 123 456 7890</p>
+               </div>
+               <div class="contact-item">
+                  <p><i class="fas fa-envelope"></i>powertranças@gmail.com</p>
+                     </div>
+               <div class="contact-item">
+               <p><i class="fas fa-map-marker-alt"></i>Rua Somos Maravilhosas 777- Brasil</p>
+            </div>
+               </div>
+                     <div class="footer-links text-center">
+                        <div class="other-links">
+                           <h3 style="color: white;">Outros Links</h3>
+                            <ul style="list-style-type: none; padding: 0;">
+                              <li style="margin-bottom: 10px;"><a href="#" style="color: white; text-decoration: none;">Web Design</a></li>
+                              <li style="margin-bottom: 10px;"><a href="#" style="color: white; text-decoration: none;">App Design</a></li>
+                              <li style="margin-bottom: 10px;"><a href="#" style="color: white; text-decoration: none;">Power Tranças</a></li>
+                              <li style="margin-bottom: 10px;"><a href="#" style="color: white; text-decoration: none;">Termos e Condições</a></li>
+                              <li style="margin-bottom: 10px;"><a href="#" style="color: white; text-decoration: none;">Política de Privacidade</a></li>
+                            </ul>
+                        </div>
+                      </div>
+                  </div>
+              <div class="credits text-center">
+                <p style="color: white;">Designed By <a href="#" style="color: #073837;">2023.</a></p>
+                <p style="color: white;">&copy; Copyright SA Coding. Todos direitos reservados Power Tranças.
+                </p>
+              </div>
+     </footer>
+
+   </body>
+</html>

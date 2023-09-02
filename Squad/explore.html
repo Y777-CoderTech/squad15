@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Squad 15 | Explore</title>
+      <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <nav>
+         <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+         </div>
+         <div class="logo">
+            PowerTranças
+         </div>
+         <div class="nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sn.index.html">Sobre Nós</a></li>
+            <li><a href="hs.html">Histórias de Sucesso</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            
+            <li><a href="contatos.html">Contatos</a></li>
+         </div>
+         <div class="search-icon">
+            <span class="fas fa-search"></span>
+         </div>
+         <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+         </div>
+         <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+      </nav>
+      <style>
+         .blog-container{
+            width: 60%;
+            margin: 50px auto;
+         }
+         .video{
+            width: 100%;
+            margin: auto;
+            position: relative;
+            padding-bottom: 56.75%;
+         }
+         .iframe iframe{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: none;
+
+         }
+      </style>
+      
+      <div class="blog-container">
+         <h1 style="margin: 20px; color:#073837">Ferramentas para Crescer</h1>
+         <p>Explore nossa coleção de recursos  desde tutoriais práticos até orientações sobre como  administrar e expandir seu négocio. <br> Confira séries de vídeos que vão fazer você ser uma empreendedora de sucesso:</p>
+         <div class="blog-heading">
+            <h3 style="color:rgb(226, 153, 43)">Tutoriais/Captar Mais Clientes/Orientações</h3>
+         </div>
+         
+         <div class="video">
+            <div class="iframe">
+               <iframe  src="https://www.youtube.com/embed/dsrbuJdXPi4?si=wCaMfM4Hu-HPttzo" ></iframe>
+            </div>
+         </div>
+         
+         <div class="video">
+            <div class="iframe">
+               <iframe src="https://www.youtube.com/embed/vgtwCXyBenI?si=ISQsTyF8qhDmkrCP"></iframe>
+            </div>
+         </div>
+         <div class="video">
+            <div class="iframe">
+               <iframe  src="https://www.youtube.com/embed/qSrWjTfRkBA?si=FjyPuybnkcG11iPL"></iframe>
+            </div>
+         </div>
+         <div class="video">
+            <div class="iframe">
+               <iframe src="https://www.youtube.com/embed/epTHQyRCkqA?si=hVN9i5ch6tVR3P9_"></iframe>
+            </div>
+         </div>
+      </div>
+      
+      <script>
+         const menuBtn = document.querySelector(" .menu-icon span");
+         const searchBtn = document.querySelector(".search-icon");
+         const cancelBtn = document.querySelector(".cancel-icon");
+         const items = document.querySelector(".nav-items");
+         const form = document.querySelector("form");
+         menuBtn.onclick = ()=>{
+           items.classList.add("active");
+           menuBtn.classList.add("hide");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+         cancelBtn.onclick = ()=>{
+           items.classList.remove("active");
+           menuBtn.classList.remove("hide");
+           searchBtn.classList.remove("hide");
+           cancelBtn.classList.remove("show");
+           form.classList.remove("active");
+           cancelBtn.style.color = "#ff3d00";
+         }
+         searchBtn.onclick = ()=>{
+           form.classList.add("active");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+      </script>
+   
+      <footer id="footer" class="footer">
+        <div class="footer-content">
+          <div class="main-txt text-center">
+            
+           </div>
+          <div class="social-links text-center">
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+                  <div class="contact-info text-center">
+                  <div class="contact-item">
+                     <p><i class="fas fa-phone"></i>+55 123 456 7890</p>
+               </div>
+               <div class="contact-item">
+                  <p><i class="fas fa-envelope"></i>powertranças@gmail.com</p>
+                     </div>
+               <div class="contact-item">
+               <p><i class="fas fa-map-marker-alt"></i>Rua Somos Maravilhosas 777- Brasil</p>
+            </div>
+               </div>
+                     <div class="footer-links text-center">
+                        <div class="other-links">
+                           <h3 style="color: white;">Outros Links</h3>
+                            <ul style="list-style-type: none; padding: 0;">
+                              <li style="margin-bottom: 10px;"><a href="#" style="color: white; text-decoration: none;">Web Design</a></li>
+                              <li style="margin-bottom: 10px;"><a href="#" style="color: white; text-decoration: none;">App Design</a></li>
+                              <li style="margin-bottom: 10px;"><a href="#" style="color: white; text-decoration: none;">Power Tranças</a></li>
+                              <li style="margin-bottom: 10px;"><a href="#" style="color: white; text-decoration: none;">Termos e Condições</a></li>
+                              <li style="margin-bottom: 10px;"><a href="#" style="color: white; text-decoration: none;">Política de Privacidade</a></li>
+                            </ul>
+                        </div>
+                      </div>
+                  </div>
+              <div class="credits text-center">
+                <p style="color: white;">Designed By <a href="#" style="color: #073837;">2023.</a></p>
+                <p style="color: white;">&copy; Copyright SA Coding. Todos direitos reservados Power Tranças.
+                </p>
+              </div>
+     </footer>
+
+   </body>
+</html>
